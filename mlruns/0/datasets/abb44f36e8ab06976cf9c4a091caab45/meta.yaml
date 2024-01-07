@@ -1,0 +1,12 @@
+digest: 4d116680
+name: dataset
+profile: '{"num_rows": 12000, "num_elements": 144000}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "age"}, {"type": "long", "name":
+  "sex"}, {"type": "long", "name": "weight"}, {"type": "double", "name": "bmi"}, {"type":
+  "integer", "name": "hereditary_diseases"}, {"type": "long", "name": "no_of_dependents"},
+  {"type": "long", "name": "smoker"}, {"type": "integer", "name": "city"}, {"type":
+  "long", "name": "bloodpressure"}, {"type": "long", "name": "diabetes"}, {"type":
+  "long", "name": "regular_ex"}, {"type": "integer", "name": "job_title"}]}'
+source: '{"tags": {"mlflow.user": "dvid", "mlflow.source.name": "C:/Users/dvid/Documents/Python_ML/Health_Insurance/run_pipeline.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "c82c7575676c662a9022603db6b96ba34ec94e88"}}'
+source_type: code

@@ -2,10 +2,34 @@
 import logging
 import pandas as pd
 from zenml import step
+from model.model_dev import RandomForestModel,LinearRegressionModel, GradientBoostingModel, SVRModel
+from sklearn.ensemble import RandomForestRegressor
+from .config import ModelNameConfig
+import mlflow
 
 @step
-def train_model(df:pd.DataFrame)->None:
-    pass
+def train_model(
+    X_train: pd.DataFrame,
+    X_test: pd.DataFrame,
+    y_train: pd.Series,
+    y_test: pd.Series,
+    config: ModelNameConfig,
+) -> RandomForestRegressor:
+    try:
+        model = None
+
+        if config.model_name == "randomforest":
+            model=RandomForestModel()
+            trained_model=model.train(X_train, y_train)
+            return trained_model
+        else:
+            raise ValueError ("Model {} not supported".format(config.model_name))
+    except Exception as e:
+        logging.error(e)
+        raise e
+    
+    
+
 
 
 

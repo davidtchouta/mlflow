@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/dvid/Documents/Python_ML/Health_Insurance/mlruns/0/1c1328baa4ef4ca8819491e4a87b6ee4/artifacts
+end_time: 1704660840146
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1c1328baa4ef4ca8819491e4a87b6ee4
+run_name: respected-elk-53
+run_uuid: 1c1328baa4ef4ca8819491e4a87b6ee4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704660822982
+status: 3
+tags: []
+user_id: dvid

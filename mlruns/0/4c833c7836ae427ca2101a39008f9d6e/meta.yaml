@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/dvid/Documents/Python_ML/Health_Insurance/mlruns/0/4c833c7836ae427ca2101a39008f9d6e/artifacts
+end_time: 1704661300068
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4c833c7836ae427ca2101a39008f9d6e
+run_name: stately-grub-296
+run_uuid: 4c833c7836ae427ca2101a39008f9d6e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704661297194
+status: 3
+tags: []
+user_id: dvid

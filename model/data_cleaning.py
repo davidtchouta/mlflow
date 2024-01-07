@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.impute import SimpleImputer
 
+
 class DataStrategy(ABC):
     """
     Abstract Class defining strategy for handling data
@@ -89,4 +90,8 @@ class DataCleaning:
 
     def handle_data(self) -> Union[pd.DataFrame, pd.Series]:
         """Handle data based on the provided strategy"""
-        return self.strategy.handle_data(self.df)
+        try:
+            return self.strategy.handle_data(self.df)
+        except Exception as e:
+            logging.error("Error in handling data: {}".format(e))
+            raise e
